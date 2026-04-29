@@ -1,0 +1,89 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Menu principal*/
+.menu{
+    display: flex;
+    justify-content: space-between; /*separa a logo e o menu*/
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+}
+/*logo*/
+.logo{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*lista*/
+.menu-link{
+    list-style: none;
+    display: flex;
+    gap: 25px; /*espaço entre os itens*/
+}
+/*Link*/
+.menu-link a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+/*Hover (efeito ao passar o mouse*/
+.menu-links a:Hover{
+    color: red;
+}
+/*Item ativo (inicio)*/
+.menu-link .ativo{
+    color: red;
+    font-weight: bold;
+}
+/*Footer*/
+.barra-alerta{
+    background-color: #a8001c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+/*container principal do footer*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 30ox;
+    flex-wrap: wrap;
+}
+/*logo*/
+.footer-logo h2{
+    color: red;
+}
+/*link do site*/
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+.footer-link a:hover{
+    color: #a8001c;
+} 
+/*redes sociais*/
+.footer-redes{
+    display: flex;
+    gap: 15px;
+}
+.footer-redes a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+.footer-redes a:hover{ 
+    color: #a8001c;
+}
