@@ -1,0 +1,67 @@
+drop database locadoraAsapTibas;
+create database locadoraAsapTibas;
+use locadoraAsapTibas;
+
+create table veiculo
+(
+id_veiculo varchar(50),
+modelo varchar(50),
+cor varchar(50),
+motor varchar(20),
+placa varchar(10),
+marca varchar(20)	
+)
+
+Create table cliente
+(
+Id_cliente varchar(50),
+Nome_cliente varchar(50),
+Email_cliente varchar(50),
+CPF_cliente varchar(11),
+Telefone_cliente varchar(10),
+Endereço_cliente varchar(30)
+)
+
+Create table reserva
+(
+Id_reserva varchar(50),
+Data_reserva varchar(15),
+Local_reserva varchar(40)
+)
+
+Create table contrato
+(
+Data_contrato varchar(15),
+Valor varchar(20),
+Quilo_inicial varchar(10),
+Tipo_seguro varchar(10),
+Dados_cliente(50),
+Dados_veiculo(50)
+)
+
+Create table manutenção
+(
+Manutenção_preventiva varchar(30),
+Manutenção_corretiva varchar(30)
+)
+
+Create table multas
+(
+Valor varchar(30),
+Nível_gravidade(30)
+)
+
+Create table devolução
+(
+Quilo_final varchar(30),
+Combustível varchar(30),
+Danos varchar(30),
+Valores_adicionais varchar(15)
+)
+
+Create table pagamentos
+(
+Cartão varchar(50),
+Boleto varchar(50),
+Chave_pix varchar(50)
+)
