@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu,
+.menu-links,
+.footer-container{
+    display:flex;
+}
+/* Menu principal */
+.menu {
+    display: flex;
+    justify-content: space-between; /* separa logo e menu */
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista */
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* espaço entre os itens */
+}
+
+/* Links */
+.menu-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover (efeito ao passar o mouse) */
+.menu-links a:hover {
+    color: red;
+}
+
+/* Item ativo (Início) */
+.menu-links .ativo {
+    color: red;
+    font-weight: bold;
+}
+/*Contato*/
+.contato{
+    max-width:600px;
+    margin: 50px auto;
+    background-color: beige;
+    padding: 30px;
+    border-radius: 10px;
+    color: #a8001c;
+}
+.contato h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a8001c;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/*input*/
+input, text{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea{
+    height: 120px;
+    resize: none;
+}
+/*botão*/
+button{
+    background-color: #a8001c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: red;
+}
+#resultado{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ===== FOOTER ===== */
+
+/* Barra vermelha superior */
+.barra-alerta {
+    background-color: #a8001c; 
+    /* vermelho escuro */
+
+    color: white; 
+    /* texto branco */
+
+    text-align: center; 
+    /* centraliza o texto */
+
+    padding: 10px; 
+    /* espaço interno */
+
+    font-size: 14px; 
+    /* tamanho da fonte */
+}
+
+/* Container principal do footer */
+.footer-container {
+    display: flex; 
+    /* coloca os elementos lado a lado */
+
+    justify-content: space-between; 
+    /* separa os blocos (logo / links / redes) */
+
+    align-items: center; 
+    /* alinha verticalmente */
+
+    background-color: #f5f5f5; 
+    /* fundo cinza claro */
+
+    padding: 30px; 
+    /* espaçamento interno */
+
+    flex-wrap: wrap; 
+    /* quebra linha em telas menores */
+}
+
+/* Logo */
+.footer-logo h2 {
+    color: #a8001c; 
+    /* vermelho */
+
+    font-size: 20px;
+}
+
+/* Links do site */
+.footer-links {
+    display: flex; 
+    flex-direction: column; 
+    /* coloca links em coluna */
+
+    gap: 10px; 
+    /* espaço entre os links */
+}
+
+.footer-links a {
+    text-decoration: none; 
+    /* remove sublinhado */
+
+    color: #444; 
+    /* cor cinza */
+
+    font-size: 14px;
+}
+
+/* Hover links */
+.footer-links a:hover {
+    color: #a8001c; 
+    /* muda para vermelho ao passar o mouse */
+}
+
+/* Redes sociais */
+.footer-redes {
+    display: flex; 
+    gap: 15px; 
+    /* espaço entre os itens */
+}
+
+.footer-redes a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Hover redes */
+.footer-redes a:hover {
+    color: #a8001c;
+}
