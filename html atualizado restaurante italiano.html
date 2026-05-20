@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signor Prince Sanji</title>
+    
+</head>
+<body>
+    <header>
+     <nav class="menu">
+        <h1 class="logo">Signor Prince</h1>
+        <ul class="menu-links">
+    <a href="index.html">Inicio</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="nossaHistoria.html">Nossa História</a>
+    <a href="localizacao.html">Localização</a>
+        </ul>
+    </nav>
+    </header>
+    <section class="contato">
+        <h1>Agende sua reserva</h1>
+        <!--Formulário-->
+        <form id="formReserva">
+            <!--nome-->
+            <label>Nome</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome aqui">
+
+            <!--email-->
+            <label>E-mail</label>
+            <input type="email" id="email" required placeholder="digite seu e-mail">
+
+            <!--whatsapp-->
+            <label>Whatsapp</label>
+            <input type="tel" id="whatsapp" required placeholder="digite um numero de celular">
+
+            <!--Data-->
+            <label>Data de reserva</label>
+            <input type="date" required id="data">
+
+            <!--Horario-->
+            <label>Horário</label>
+            <input type="time" required id="horario">
+
+            <!--observações-->
+            <label>Informações das reservas</label>
+            <textarea id="mensagem" placeholder="Exemplo: None: João, Quantidade de pessoas: 4, Mesa proxima a janela"></textarea>
+            <!--botão-->
+            <button type="submit"> Agendar Reserva</button>
+        </form>
+        <!--mensagem-->
+        <p id="resultado"></p>
+    </section>
+    <!--conecta com javascript-->
+    <script src="script.js"></script>
+    <footer><!--Rodapé-->
+            <!--Barra vermelha-->
+            <div class="barra-alerta">
+                <p>SE BEBER, NÃO DIRIJA!</p>
+            </div>
+            <!--Conteudo principal do rodape-->
+            <div class="footer-container">
+                <!--Logo-->
+                <div class="footer-logo">
+                    <h2>Signor Prince</h2>
+                </div>
+                <!--Link do site-->
+                <div class="footer-link">
+                    <a href="28-04-06.html">Inicio</a>
+                    <a href="cardapio.html">Cardapio</a>
+                    <a href="nossaHistoria.html">Nossa História</a>
+                    <a href="localizacao.html">Localização</a>
+                </div>
+                <!--Redes sociais-->
+                <div class="footer-redes">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
